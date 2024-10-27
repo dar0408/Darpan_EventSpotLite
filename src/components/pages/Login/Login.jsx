@@ -4,7 +4,6 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { FcGoogle } from "react-icons/Fc";
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
@@ -118,7 +117,7 @@ const Login = () => {
             onClick={handleGoogleLogin}
           >
             <span className="text-4xl items-center  flex gap-2 mx-auto">
-              <FcGoogle className="bg-white h-full  rounded-md" />
+           
               <h2 className="text-center font-medium  text-xl  text-white">
                 Sign Up with Google
               </h2>
